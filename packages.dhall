@@ -1,6 +1,6 @@
 -- Modifications copyright (C) 2021 Peter Andersen
-
 let upstream =
-      https://github.com/purescript/package-sets/releases/download/psc-0.14.4-20210826/packages.dhall sha256:eee0765aa98e0da8fc414768870ad588e7cada060f9f7c23c37385c169f74d9f
+      https://raw.githubusercontent.com/working-group-purescript-es/package-sets/main/packages.dhall sha256:642a07499270b2a0425accb35a043b72297bcd957965c2b50f0b34b558c59bc4
 
 in  upstream
+  with metadata.version = "v0.15.0"

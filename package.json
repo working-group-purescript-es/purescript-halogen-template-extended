@@ -1,14 +1,14 @@
 {
   "private": true,
   "devDependencies": {
-    "parcel": "^2.0.0-rc.0",
-    "purescript": "^0.14.4",
+    "http-server": "^14.1.0",
+    "parcel": "^2.2.1",
     "spago": "^0.20.3"
   },
   "scripts": {
     "build": "spago build",
     "test": "spago test",
-    "serve": "parcel dev/index.html --open",
-    "build-prod": "mkdir -p prod && cp dev/index.html prod/ && rm -rf dist && spago bundle-app --to prod/index.js && parcel build prod/index.html"
+    "serve": "parcel dev/index.dev.html --open",
+    "build-prod": "mkdir -p prod && cp dev/index.html prod/ && cp dev/index.js prod/ && cp -r output/ prod/ && http-server prod/"
   }
 }
