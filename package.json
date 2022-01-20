@@ -9,6 +9,6 @@
     "build": "spago build",
     "test": "spago test",
     "serve": "parcel dev/index.dev.html --open",
-    "build-prod": "mkdir -p prod && cp dev/index.html prod/ && cp dev/index.js prod/ && cp -r output/ prod/ && http-server prod/ --mimetypes mime.types"
+    "build-prod": "mkdir -p prod && cp dev/index.html prod/ && cp dev/index.js prod/ && cp -r output/ prod/ && http-server prod/"
   }
 }
