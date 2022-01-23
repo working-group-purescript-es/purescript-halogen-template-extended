@@ -1,2 +1,3 @@
-import { main } from "./Main/index.js"
+import { main } from "../output/Main/index.js"
+
 main()
